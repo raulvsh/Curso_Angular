@@ -8,12 +8,19 @@
 
 <p>Empresa del empleado: {{empresa.value}}</p>
 
-Introduce la empresa: <input type="text" #empresa (keyup)="0"/>
+Introduce la empresa: <input type="text" #empresa (keyup)="0" [disabled]="habilitacionCuadro"/>
 
 <br>
 <br>
 
 Introduce la edad: <input type="text" #edad (keyup)="0"/>
+
+<br>
+<br>
+
+Registrado: <input type="checkbox" id="registro" [checked]="usuarioRegistrado"/>
+
+{{getRegistroUsuario()}}
 
 
 

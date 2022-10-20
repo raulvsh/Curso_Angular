@@ -19,9 +19,15 @@ export class EmpleadoComponent implements OnInit {
   }*/
 
   /*llamaEmpresa(value:String){
-
-
   }*/
+
+  habilitacionCuadro = true;
+
+  usuarioRegistrado = false;
+
+  getRegistroUsuario(){
+    this.usuarioRegistrado=true;
+  }
 
   parseInt(value:string){
     return parseInt(value);
