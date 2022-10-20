@@ -11,12 +11,36 @@ export class EmpleadoComponent implements OnInit {
 
   nombre="Juan";
   apellido="Diaz";
-  edad=28;
-  empresa="Píldoras informáticas";
+  //edad=28;
+  //empresa="Píldoras informáticas";
 
-  getEdad(){
+ /* getEdad(){
     return this.edad;
+  }*/
+
+  /*llamaEmpresa(value:String){
+
+
+  }*/
+
+  parseInt(value:string){
+    return parseInt(value);
   }
+
+  mostrarEdad(value:string){
+    let edad=parseInt(value);
+    let mensaje;
+    if (edad<18){
+      mensaje="Menor de edad"
+    }
+    else if(edad>18){
+      mensaje="Mayor de edad";
+    } else{
+      mensaje="Introduzca la edad";
+    }
+    return mensaje;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

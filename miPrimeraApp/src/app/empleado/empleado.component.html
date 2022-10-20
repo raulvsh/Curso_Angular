@@ -2,6 +2,19 @@
 
 <p>Apellido del empleado: {{apellido}}</p>
 
-<p>Edad del empleado: {{edad<18 ? "Menor de edad" : "Mayor de edad"}}</p>
+<!--<p>Edad del empleado: {{edad<18 ? "Menor de edad" : "Mayor de edad"}}</p>-->
 
-<p>Empresa del empleado: {{empresa}}</p>
+<p>Edad del empleado: {{edad.value + " - " + mostrarEdad(edad.value)}}</p>
+
+<p>Empresa del empleado: {{empresa.value}}</p>
+
+Introduce la empresa: <input type="text" #empresa (keyup)="0"/>
+
+<br>
+<br>
+
+Introduce la edad: <input type="text" #edad (keyup)="0"/>
+
+
+
+<!--//<input type="button" value="Aceptar" (click)="llamaEmpresa(empresa.value)"/>-->
