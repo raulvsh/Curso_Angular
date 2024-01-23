@@ -1,3 +1,3 @@
-Curso Angular PildorasInformaticass
+Curso Angular PildorasInformaticas y documentación oficial
 
-Actualizado 19_10_2022
+Actualizado 23_01_2024
