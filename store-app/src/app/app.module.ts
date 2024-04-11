@@ -24,7 +24,6 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
         RouterModule.forRoot([
             { path: '', component: ProductListComponent },
         ]),
-        ProductAlertsComponent
     ]
 })
 export class AppModule { }
