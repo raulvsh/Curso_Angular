@@ -1,0 +1,4 @@
+En una terminal
+    json-server --watch db.json
+En una segunda terminal
+    ng serve
