@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 import { Hero } from '../hero';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgIf, UpperCasePipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import {HEROES} from '../mock-heroes';
+import { NgFor } from '@angular/common';
 
 
 @Component({
@@ -10,6 +12,9 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
+    NgFor,
+    NgIf,
+    UpperCasePipe,
 
 
   ],
@@ -19,9 +24,11 @@ import { FormsModule } from '@angular/forms';
 export class HeroesComponent {
   //hero = 'Windstorm';
 
-  hero: Hero = {
+  /*hero: Hero = {
     id: 1,
     name: 'Windstorm'
-  }
+  }*/
+
+  heroes = HEROES;
 
 }
