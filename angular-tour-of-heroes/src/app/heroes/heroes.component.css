@@ -21,7 +21,7 @@
     border-radius: 4px;
     display: flex;
     align-items: stretch;
-    height: 1.8em;
+    height: 2.5em;
   }
   
   .heroes button:hover {
@@ -59,6 +59,7 @@
     line-height: 1em;
     margin-right: .8em;
     border-radius: 4px 0 0 4px;
+    justify-content: center;
   }
   
   .heroes .name {
