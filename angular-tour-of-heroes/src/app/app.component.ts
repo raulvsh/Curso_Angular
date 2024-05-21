@@ -8,8 +8,8 @@ import { MessagesComponent } from './messages/messages.component';
   standalone: true,
   imports: [
     RouterOutlet,
+    MessagesComponent,
     HeroesComponent,
-    MessagesComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
