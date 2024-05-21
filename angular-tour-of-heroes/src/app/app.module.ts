@@ -14,15 +14,14 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule,
-    MessagesComponent
-
+    AppRoutingModule
   ],
   declarations: [
     AppComponent,
     DashboardComponent,
     HeroesComponent,
     HeroDetailComponent,
+    MessagesComponent
   ],
   bootstrap: [ AppComponent ]
 })
